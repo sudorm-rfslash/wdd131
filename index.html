@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>WDD 131 - Dynamic Web Fundamentals - Kyler Evans</title>
+  <meta name="description"
+    content="A simple home page with basic styling. WDD 131 - Dynamic Web Fundamentals - Kyler Evans." />
+  <meta name="author" content="Kyler Evans" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .navigation {
+      display: flex;
+      align-items: center;
+
+    }
+
+    .navigation a {
+      display: block;
+      color: #eee;
+      padding: 0.75rem;
+      text-decoration: none;
+      text-align: center;
+      flex: 1 1 auto;
+    }
+  </style>
 </head>
+
 <body>
-  
+
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - Kyler Evans</h1>
+    <nav class="navigation">
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://byui.instructure.com/">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/introduction?lang=eng&id=p6#p6">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hello! My name is Kyler and I'm from the United States. I love technology and games. I want to get a job as a
+        programmer some day. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor. Habitant morbi tristique senectus et
+        netus. Diam maecenas sed enim ut sem. Ullamcorper dignissim cras tincidunt lobortis feugiat. Dui sapien eget mi
+        proin sed libero. Ultrices tincidunt arcu non sodales neque sodales. Id faucibus nisl tincidunt eget. Sed
+        euismod nisi porta lorem mollis aliquam ut. Vitae tempus quam pellentesque nec nam aliquam sem et. Sit amet
+        volutpat consequat mauris nunc congue. Lacus vestibulum sed arcu non.</p>
+      <img src="images/profile.jpg" alt="Hello, my name is Kyler Evans" width="200">
+    </section>
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        <li><a href="https://loremipsum.io/generator">Lorem Ipsum Gen</a></li>
+        <li><a href="https://it-tools.tech/">IT Tools</a></li>
+        <li><a href="https://sudorm-rfslash.github.io/wdd131/">GitHub Pages</a></li>
+      </ul>
+    </section>
+
+    </nav>
+  </main>
+
+  <footer>
+    <span id="currentyear"></span> 
+    <p>© 2024 Your Website. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
