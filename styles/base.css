@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
-header, footer {
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Use the Google Font */
+}
+
+header,
+footer {
   background-color: #164d70;
   display: block;
   align-items: center;
@@ -118,7 +123,7 @@ nav a:hover {
 }
 
 footer {
-  background-color:#164d70;
+  background-color: #164d70;
   color: white;
   text-align: center;
   padding: 20px;
