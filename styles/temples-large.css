@@ -14,10 +14,6 @@
     overflow: hidden;
   }
 
-  .hidden {
-    display: all;
-  }
-
   .btn-class {
     display: none;
   }

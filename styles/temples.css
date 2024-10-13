@@ -45,7 +45,7 @@ h2 {
 
 figure img {
   width: 100%;
-  max-width: auto;
+  max-width: fit-content;
   height: auto;
 }
 
@@ -55,11 +55,9 @@ figure {
   margin: 10px;
 }
 
-
 figcaption {
   margin-top: 10px;
 }
-
 
 footer {
   text-align: center;
@@ -70,9 +68,5 @@ footer {
 @media (max-width: 700px) {
   .hidden {
     display: none;
-  }
-
-  .btn-class {
-    display: all;
   }
 }
