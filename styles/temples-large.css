@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   main div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,5 +7,18 @@
 
   nav ul {
     display: flex;
+  }
+
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .hidden {
+    display: all;
+  }
+
+  .btn-class {
+    display: none;
   }
 }
