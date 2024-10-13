@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  main div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  nav ul {
+    display: flex;
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: 'YourFont', sans-serif;
+  /* Use Google Fonts */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+h2 {
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+}
+
+figure {
+  text-align: center;
+}
+
+
+figcaption {
+  margin-top: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
