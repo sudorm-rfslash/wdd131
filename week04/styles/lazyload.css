@@ -1,0 +1,23 @@
+header, footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+}
+
+img {
+  display: block;
+  width: 400px;
+  height: 600px;
+  margin: 20px auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.lazy_img--unloaded {
+  opacity: 0;
+  visibility: hidden;
+}

@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 - Dynamic Web Fundamentals - Kyler Evans</title>
   <meta name="description" content="Lazy loading practice. WDD 131 - Dynamic Web Fundamentals - Kyler Evans.">
   <meta name="author" content="Kyler Evans">
-  <link rel="stylesheet" href="styles/acme.css">
+  <link rel="stylesheet" href="styles/lazyload.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <script src="scripts/lazyload.js" defer></script>
 </head>
+
 <body>
-  
+  <header>
+    <h1>Lazy Loaded Images Example</h1>
+  </header>
+
+  <main>
+    <img src="https://placehold.co/800/jpg" alt="Photo 1" loading="lazy">
+    <img src="https://placehold.co/799/jpg" alt="Photo 2" loading="lazy">
+    <img src="https://placehold.co/798/jpg" alt="Photo 3" loading="lazy">
+    <img src="https://placehold.co/797/jpg" alt="Photo 4" loading="lazy">
+    <img src="https://placehold.co/796/jpg" alt="Photo 5" loading="lazy">
+    <img src="https://placehold.co/795/jpg" alt="Photo 6" loading="lazy">
+  </main>
+  <footer>
+    <p>©️<span id="currentyear"></span> ⚡ Kyler Evans ⚡ USA</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
+
 </html>
