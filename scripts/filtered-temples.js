@@ -83,10 +83,9 @@ const temples = [
 
 window.onload = function () {
   const templeCards = document.getElementById('templeCards');
-  
-  // Function to display temples
+
   const displayTemples = (templesToDisplay) => {
-    templeCards.innerHTML = ''; // Clear existing cards
+    templeCards.innerHTML = '';
     templesToDisplay.forEach(temple => {
       const card = document.createElement('div');
       card.className = 'temple-card';
