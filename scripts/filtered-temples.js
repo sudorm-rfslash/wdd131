@@ -82,6 +82,11 @@ const temples = [
 ];
 
 window.onload = function () {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentyear').textContent = currentYear;
+  const lastModifiedDate = document.lastModified;
+  document.getElementById('lastModified').textContent = "Last Modified: " + lastModifiedDate;
+
   const templeCards = document.getElementById('templeCards');
 
   const displayTemples = (templesToDisplay) => {
@@ -152,3 +157,11 @@ document.getElementById('toggleButton').addEventListener('click', function () {
     this.textContent = '☰';
   }
 });
+
+
+function updateFooter() {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentyear').textContent = currentYear;
+  const lastModifiedDate = document.lastModified;
+  document.getElementById('lastModified').textContent = "Last Modified: " + lastModifiedDate;
+}
