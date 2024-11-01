@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Kyler Evans</title>
+  <meta name="description" content="My Website Project. WDD 131 - Dynamic Web Fundamentals - Kyler Evans.">
+  <meta name="author" content="Kyler Evans">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="scripts/project.js" defer></script>
+  <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Cinecheque</h1>
+    <button id="toggleButton" class="btn-class">&#9776;</button>
+    <nav id="navbar" class="hidden">
+      <ul>
+        <li><a href="#top" id="top">Top Movies</a></li>
+        <li><a href="#trending" id="trending">Trending Movies</a></li>
+        <li><a href="#tv" id="tv">Trending TV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to Cinecheque!</h2>
+    <p>This site is run using the TMDB API. This site may have issues if the TMDB is down.</p>
+    <div id="movieCards"></div>
+  </main>
+
+
+  <footer>
+    <form id="newsletterForm" action="#" method="post">
+      <label for="email">Sign up for our daily newsletter:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>©️<span id="currentyear"></span> ⚡ Kyler Evans ⚡ USA</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
