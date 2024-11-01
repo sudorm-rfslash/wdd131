@@ -1,13 +1,12 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
-
 let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => displayList(chapter));
 
 button.addEventListener('click', () => {
-  if (input.value !== '') {
+  if (input.value.trim() !== '') {
     displayList(input.value);
     chaptersArray.push(input.value);
     setChapterList();
@@ -18,16 +17,19 @@ button.addEventListener('click', () => {
 
 function displayList(item) {
   const li = document.createElement('li');
-  li.textContent = item;
-  
   const deleteBtn = document.createElement('button');
-  deleteBtn.textContent = '❌';
-  deleteBtn.classList.add('delete');
   
-  deleteBtn.addEventListener('click', () => deleteChapter(item));
+  li.textContent = item;
+  deleteBtn.textContent = '❌';
   
   li.appendChild(deleteBtn);
   list.appendChild(li);
+
+  deleteBtn.addEventListener('click', () => {
+    list.removeChild(li);
+    deleteChapter(item);
+    input.focus();
+  });
 }
 
 function setChapterList() {
@@ -39,10 +41,6 @@ function getChapterList() {
 }
 
 function deleteChapter(chapter) {
-  chapter = chapter.slice(0, chapter.length - 1);
   chaptersArray = chaptersArray.filter(item => item !== chapter);
   setChapterList();
-
-  list.innerHTML = '';
-  chaptersArray.forEach(chapter => displayList(chapter));
 }
